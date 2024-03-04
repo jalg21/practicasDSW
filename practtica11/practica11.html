@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        #header, #nav, #footer, #contenedor {
+            width: 100%;
+        }
+        body {
+            height: 100vh;
+        }
+        #header {
+            height: 10%;
+            background: green;
+        }
+        #footer {
+            height: 10%;
+            background: pink;
+        }
+        #nav {
+            height: 10%;
+            background: green;
+        }
+        #contenedor {
+            display: flex;
+            height: 75%;
+            justify-content: space-around;
+        }
+        .article, .section {
+            height: 90%;
+        }
+        .article {
+            width: 20%;
+            background: skyblue;
+        }
+        .section {
+            width: 50%;
+            background: yellow;
+        }
+        body{
+
+            background-color:#FCF3CF ;
+            margin: 0.5cm;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Encabezado</div><br>
+    <div id="nav">Menu</div><br>
+    <div id="contenedor">
+        <div class="article">Publicidad</div><br>
+        <div class="section">Contenido</div><br>
+        <div class="article">Link</div><br>
+    </div>
+    <div id="footer">Pie</div>
+</body>
+</html>
