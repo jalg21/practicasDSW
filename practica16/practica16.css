@@ -1,0 +1,52 @@
+/* joselyn alvarado gutierrez*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffeacc;
+}
+
+header {
+    background-color:#fa5f49;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.producto {
+    width: 20em; /* Ancho en em */
+    background-color: #ffc166;
+    border: 0.1em solid #ddd; /* Grosor del borde en em */
+    border-radius: 0.5em; /* Radio de borde en em */
+    margin: 1em;
+    padding: 1.5em;
+    text-align: center;
+}
+
+.producto1{
+    height: 50%;
+    width: 48%;
+}
+
+footer {
+    background-color: #fa5f49;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100vw; /* Ancho en vw */
+}
+
+img{
+    height: 30%;
+    width: 20%;
+}
