@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Em: Tamaño de texto relativo al tamaño del texto del elemento padre */
+.em-example {
+    font-size: 1.5em; /* 1.5 veces el tamaño del texto del elemento padre */
+    margin-bottom: 10px;
+}
+
+/* Ex: Tamaño de texto relativo a la altura de la letra 'x' del elemento padre */
+.ex-example {
+    font-size: 2ex; /* 2 veces la altura de la letra 'x' del elemento padre */
+    margin-bottom: 10px;
+}
+
+/* Rem: Tamaño de texto relativo al tamaño del texto del elemento raíz (html) */
+.rem-example {
+    font-size: 1.2rem; /* 1.2 veces el tamaño del texto del elemento raíz */
+    margin-bottom: 10px;
+}
+
+/* VW: Ancho del viewport */
+.vw-example {
+    width: 50vw; /* El 50% del ancho del viewport */
+    height: 50px;
+    background-color: #3498db;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* VH: Altura del viewport */
+.vh-example {
+    width: 100px;
+    height: 30vh; /* El 30% de la altura del viewport */
+    background-color: #2ecc71;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* VMIN: El mínimo entre el ancho y la altura del viewport */
+.vmin-example {
+    width: 20vmin; /* El 20% del mínimo entre el ancho y la altura del viewport */
+    height: 20vmin;
+    background-color: #e74c3c;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.vmax-example {
+    width: 70vmax; /* El 70% del máximo entre el ancho y la altura del viewport */
+    height: 70vmax;
+    background-color: #f39c12;
+    color: #fff;
+    margin-bottom: 10px;
+}
