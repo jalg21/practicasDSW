@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap'); /* Importa la fuente 'Mochiy Pop One' desde Google Fonts */
+
+*{
+    box-sizing: border-box; /* Configura el modelo de caja para incluir el relleno y el borde en el ancho y alto */
+    font-family: 'Mochiy Pop One'; /* Aplica la fuente 'Mochiy Pop One' a todos los elementos */
+}
+
+body{
+    background: url(img/fondo.jpg); /* Establece una imagen de fondo para el cuerpo */
+    background-size: cover; /* Hace que la imagen de fondo cubra todo el tamaño del contenedor */
+    background-attachment: fixed; /* Fija la imagen de fondo para que no se desplace con el contenido */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+}
+
+h1{
+    width: fit-content; /* Ajusta el ancho del encabezado según su contenido */
+    background-color: #fff; /* Establece el color de fondo del encabezado */
+    margin: 40px auto; /* Establece los márgenes superior e inferior a 40px y los laterales automáticamente */
+    border-radius: 60px; /* Aplica un radio de borde de 60px */
+    box-shadow: 5px 5px 0 #000; /* Agrega una sombra al encabezado */
+    padding: 20px 30px; /* Agrega relleno interno al encabezado */
+}
+
+header{
+    width: 100%; /* Establece el ancho del encabezado al 100% del contenedor */
+    background-color: #000; /* Establece el color de fondo del encabezado */
+    color: #fff; /* Establece el color del texto del encabezado */
+    font-size: 12px; /* Establece el tamaño de fuente del encabezado */
+    padding: 10px; /* Agrega relleno interno al encabezado */
+    text-align: center; /* Centra el texto dentro del encabezado */
+}
+
+/* PANTALLA INICIO */
+#pantalla-inicial{
+    display: block; /* Muestra el elemento de la pantalla inicial */
+    text-align: center; /* Centra el texto dentro del elemento */
+    font-size: 30px; /* Establece el tamaño de fuente del texto */
+}
+#pantalla-inicial{
+    margin: 60px 0; /* Establece márgenes superior e inferior de 60px y laterales de 0 */
+}
+.btn{
+    border: none; /* Elimina el borde del botón */
+    background: #580078; /* Establece el color de fondo del botón */
+    color: #fff; /* Establece el color del texto del botón */
+    padding: 10px 20px; /* Agrega relleno interno al botón */
+    border-radius: 50px; /* Aplica un radio de borde de 50px */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: .5s; /* Agrega una transición de 0.5 segundos al botón */
+}
+.btn:hover{
+    transform: scale(1.1); /* Hace que el botón se agrande ligeramente al pasar el cursor sobre él */
+}
+
+/* PANTALLA juego */
+#pantalla-juego{
+    display: none; /* Oculta el elemento de la pantalla de juego */
+}
+.pantalla-juego{
+    max-width: 800px; /* Establece el ancho máximo del contenedor de la pantalla de juego */
+    margin: 50px auto; /* Establece los márgenes superior e inferior a 50px y los laterales automáticamente */
+    text-align: center; /* Centra el contenido dentro del contenedor */
+}
+.pantalla-juego img{
+    max-width: 400px; /* Establece el ancho máximo de las imágenes dentro del contenedor */
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho disponible */
+}
+.opciones{
+    max-width: 400px; /* Establece el ancho máximo del contenedor de opciones */
+    margin: auto; /* Centra el contenedor de opciones horizontalmente */
+}
+.opcion{
+    display: flex; /* Usa el modelo de caja flexible para el diseño de las opciones */
+    position: relative; /* Establece la posición relativa para el posicionamiento de los elementos internos */
+    align-items: center; /* Centra verticalmente los elementos dentro de las opciones */
+    max-width: 400px; /* Establece el ancho máximo de las opciones */
+    margin: 30px auto; /* Establece los márgenes superior e inferior a 30px y los laterales automáticamente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre las opciones */
+}
+.opcion .letra{
+    background-color: #580078; /* Establece el color de fondo de la letra */
+    width: 50px; /* Establece el ancho de la letra */
+    height: 50px; /* Establece la altura de la letra */
+    font-size: 30px; /* Establece el tamaño de fuente de la letra */
+    font-weight: bold; /* Establece el grosor de la letra como negrita */
+    color: #fff; /* Establece el color del texto de la letra */
+    text-align: center; /* Centra el texto dentro de la letra */
+    border-radius: 50%; /* Aplica un radio de borde de 50% para hacer un círculo */
+    line-height: 35px; /* Establece la altura de línea para centrar verticalmente el texto */
+    border: 5px solid #fff; /* Establece un borde de 5px sólido con color blanco */
+    position: relative; /* Establece la posición relativa para el posicionamiento de los elementos internos */
+}
+.opcion .nombre{
+    background: #fff; /* Establece el color de fondo del nombre de la opción */
+    width: 100%; /* Establece el ancho del nombre al 100% del contenedor */
+    font-size: 25px; /* Establece el tamaño de fuente del nombre */
+    position: absolute; /* Establece la posición absoluta para posicionar el nombre sobre la letra */
+    margin-left: 30px; /* Establece un margen izquierdo de 30px */
+    z-index: -2; /* Establece el índice z para que el nombre esté detrás de la letra */
+    border-radius: 0 20px 20px 0; /* Aplica un radio de borde para el nombre */
+    padding: 7px 0 7px 30px; /* Agrega relleno interno al nombre */
+}
+.opcion .nombreAcertada{
+    background-color: yellowgreen; /* Establece el color de fondo cuando la opción es acertada */
+    color: #fff; /* Establece el color del texto cuando la opción es acertada */
+}
+.opcion .letraAcertada{
+    background-color: yellowgreen; /* Establece el color de fondo de la letra cuando la opción es acertada */
+    color: #fff ; /* Establece el color del texto de la letra cuando la opción es acertada */
+}
+.opcion .nombreNoAcertada{
+    background-color: darkred; /* Establece el color de fondo cuando la opción no es acertada */
+    color: #fff; /* Establece el color del texto cuando la opción no es acertada */
+}
+.opcion .letraNoAcertada{
+    background-color: darkred; /* Establece el color de fondo de la letra cuando la opción no es acertada */
+    color: #fff; /* Establece el color del texto de la letra cuando la opción no es acertada */
+}
+
+/* PANTALLA final */
+#pantalla-final{
+    display: none; /* Oculta el elemento de la pantalla final */
+    text-align: center; /* Centra el texto dentro del elemento */
+}
+#pantalla-final #numCorrectas{
+    background-color: chartreuse; /* Establece el color de fondo del número de respuestas correctas */
+    display: inline-block; /* Muestra el elemento como bloque en línea */
+    width: 50px; /* Establece el ancho del elemento */
+    height: 50px; /* Establece la altura del elemento */
+    border-radius: 50%; /* Aplica un radio de borde de 50% para hacer un círculo */
+    border: 5px solid #fff; /* Establece un borde de 5px sólido con color blanco */
+}
+#pantalla-final #numIncorrectas{
+    background-color: darkred; /* Establece el color de fondo del número de respuestas incorrectas */
+    display: inline-block; /* Muestra el elemento como bloque en línea */
+    width: 50px; /* Establece el ancho del elemento */
+    height: 50px; /* Establece la altura del elemento */
+    border-radius: 50%; /* Aplica un radio de borde de 50% para hacer un círculo */
+    border: 5px solid #fff; /* Establece un borde de 5px sólido con color blanco */
+}
